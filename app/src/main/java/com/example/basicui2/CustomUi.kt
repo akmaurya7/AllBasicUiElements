@@ -32,12 +32,9 @@ fun CustomUiScreen() {
                 .fillMaxSize()
                 .padding(innerPadding)
         ) {
-            ElevatedCard(
-                elevation = CardDefaults.cardElevation(
-                    defaultElevation = 3.dp
-                ),
+            Card(
                 modifier = Modifier
-                    .padding(16.dp)
+                    .padding(20.dp)
                     .wrapContentHeight()
                     .fillMaxWidth()
             ) {
@@ -50,17 +47,17 @@ fun CustomUiScreen() {
                     Text(
                         text = "Jetpack Compose",
                         fontSize = 28.sp,
-                        color = colorResource(id =R.color.purple_700),
+                        color = Color(6, 74, 124, 255),
                         modifier = Modifier
-                            .padding(16.dp)
+                            .padding(0.dp,20.dp,0.dp,8.dp)
                     )
                     Image(
-                        painter = painterResource(id = R.drawable.jetpack),
+                        painter = painterResource(id = R.drawable.jetpackcompose),
                         contentDescription = "Jetpack Logo",
                         modifier = Modifier
                             .padding(16.dp)
-                            .height(120.dp)
-                            .width(120.dp)
+                            .height(110.dp)
+                            .width(110.dp)
                     )
 
                     Spacer(modifier = Modifier.height(16.dp))
@@ -71,7 +68,8 @@ fun CustomUiScreen() {
                         modifier = Modifier
                             .padding(24.dp, 8.dp)
                             .fillMaxWidth(),
-                        textAlign = TextAlign.Start
+                        textAlign = TextAlign.Start,
+                        color = Color(10, 102, 65,255),
                     )
 
                     var email by remember { mutableStateOf("") }
@@ -81,7 +79,7 @@ fun CustomUiScreen() {
                         onValueChange = { email = it},
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(24.dp, 16.dp)
+                            .padding(28.dp, 16.dp)
                     )
                     var pass by remember { mutableStateOf("") }
                     var showPass by remember { mutableStateOf(false) }
@@ -91,7 +89,7 @@ fun CustomUiScreen() {
                         onValueChange = {pass = it},
                         modifier = Modifier
                             .fillMaxWidth()
-                            .padding(24.dp, 16.dp,24.dp,8.dp),
+                            .padding(28.dp, 16.dp,28.dp,6.dp),
 
                         visualTransformation = if(showPass){
                             VisualTransformation.None
@@ -125,7 +123,8 @@ fun CustomUiScreen() {
                             modifier = Modifier
                                 .padding(0.dp,0.dp,24.dp,0.dp)
                                 .fillMaxWidth(),
-                            textAlign = TextAlign.End
+                            textAlign = TextAlign.End,
+                            color = Color(26, 115, 87,255)
                         )
                     }
 
@@ -154,11 +153,12 @@ fun CustomUiScreen() {
                 horizontalArrangement = Arrangement.Center,
                 verticalAlignment = Alignment.CenterVertically
             ) {
-                Text(text = "Don't have an account?")
+                Text(text = "Don't have an account?", modifier = Modifier.padding(0.dp))
                 TextButton(
-                    onClick = { /*TODO*/ }
+                    onClick = { /*TODO*/ },
+                    modifier = Modifier.padding(0.dp)
                 ) {
-                    Text(text = "Register", textAlign = TextAlign.Start)
+                    Text(text = "Register", textAlign = TextAlign.Start, modifier = Modifier.padding(0.dp))
                 }
             }
         }

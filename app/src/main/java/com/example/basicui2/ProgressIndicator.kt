@@ -42,7 +42,7 @@ fun ProgressIndicatorScreen() {
     ) { innerPadding ->
         var currentProgress by remember { mutableStateOf(0f) }
         var loading by remember { mutableStateOf(false) }
-        val scope = rememberCoroutineScope() // Create a coroutine scope
+        val scope = rememberCoroutineScope()
 
         Column(
             verticalArrangement = Arrangement.spacedBy(12.dp),
@@ -58,7 +58,7 @@ fun ProgressIndicatorScreen() {
                     loadProgress { progress ->
                         currentProgress = progress
                     }
-                    loading = false // Reset loading when the coroutine finishes
+                    loading = false
                 }
             }, enabled = !loading) {
                 Text("Start loading")
@@ -69,6 +69,7 @@ fun ProgressIndicatorScreen() {
                     progress = { currentProgress },
                     modifier = Modifier.fillMaxWidth(),
                 )
+
                 CircularProgressIndicator(
                     progress = { currentProgress },
                     modifier = Modifier.padding(16.dp)
