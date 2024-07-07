@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">BasicUi2</string>
+    
+    <string name="ButtonDescription"> Buttons are fundamental components that allow the user to trigger a defined action. There are five types of buttons</string>
+    <string name="Buttons">Buttons</string>
+
+    <string name="CardDescription">The Card composable acts as a Material Design container for your UI. Cards typically present a single coherent piece of content</string>
+    <string name="Card">Card</string>
+
+    <string name="ChipDescription">The Chip component is a compact, interactive UI element. It represents complex entities like a contact or tag, often with an icon and label. It can be checkable, dismissible, or clickable.</string>
+    <string name="Chip">Chip</string>
+
+    <string name="BottomSheetDescription">Bottom sheets are used to show secondary  content and actions on a mobile screen anchored to the bottom of the screen.</string>
+    <string name="BottomSheet">BottomSheet</string>
+
+    <string name="DialogBoxDescription">The Dialog component displays pop up messages or requests user input on a layer above the main app content. It creates an interruptive UI experience to capture user attention</string>
+    <string name="DialogBox">DialogBox</string>
+
+    <string name="DividerDescription">Dividers are thin lines that separate items in lists or other containers. You can implement dividers in your app using the HorizontalDivider and VerticalDivider composables</string>
+    <string name="Divider">Divider</string>
+
+    <string name="LazyColumnListDescription">Lazy lists compose provides a set of components which only compose and lay out items which are visible in the component\'s viewportThese components include LazyColumn and LazyRow</string>
+    <string name="LazyColumnList">LazyList</string>
+
+    <string name="LazyVerticalGridDescription">A Lazy grid will display its items in a vertically scrollable container, spanned across multiple columns,</string>
+    <string name="LazyVerticalGrid">LazyGrid</string>
+
+    <string name="ProgressIndicatorDescription">Progress indicators visually surface the status of an operation. They use motion to bring to the user\'s attention how near completion the process is, such as loading or processing data.</string>
+    <string name="ProgressIndicator">ProgressIndicator</string>
+
+    <string name="ScaffoldDescription">In Material Design, a scaffold is a fundamental structure that provides a standardized platform for complex user interfaces. It holds app bars and floating action buttons.</string>
+    <string name="Scaffold">Scaffold</string>
+
+    <string name="SliderDescription">The Slider composable allows users to make selections from a range of values. You might use a slider to let the user do the following: Adjust settings that use a range of values, such as volume, and brightness</string>
+    <string name="Slider">Slider</string>
+
+    <string name="SwitchDescription">The Switch component allows users to toggle between two states: checked and unchecked. In your app you may use a switch to let the user to do one of the following: Toggle a setting on or off</string>
+    <string name="Switch">Switch</string>
+
+    <string name="TextFieldDescription">TextField allows users to enter and modify text. This page describes how you can implement TextField , style TextField input, and configure other TextField options</string>
+    <string name="TextField">TextField</string>
+
+    <string name="CustomUiDescription">By clicking the below button you get the custom ui of the login page for the jetpack compose </string>
+    <string name="CustomUi">Custom ui</string>
+</resources>
