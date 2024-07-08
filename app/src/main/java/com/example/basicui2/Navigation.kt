@@ -36,7 +36,7 @@ fun NavigationScreen(navController: NavController){
                 ),
                 title = {
                     Text(
-                        text = "Chip Page",
+                        text = "Navigation Page",
                         fontWeight = FontWeight.Bold,
                         fontSize = 32.sp
                     )
