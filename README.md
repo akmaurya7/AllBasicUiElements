@@ -72,3 +72,8 @@
 
 <img src="https://github.com/akmaurya7/AllBasicUiElements/blob/master/ScreenShot/CustomUi.jpg" alt="Alt text" width="300" height="550">
 
+
+# Navigation page
+
+<img src="https://github.com/akmaurya7/AllBasicUiElements/blob/master/ScreenShot/navigation.jpg" alt="Alt text" width="300" height="550">
+
