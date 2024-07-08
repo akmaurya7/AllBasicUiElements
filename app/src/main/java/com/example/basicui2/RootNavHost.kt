@@ -1,6 +1,7 @@
 package com.example.basicui2
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.internal.composableLambda
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
@@ -54,6 +55,16 @@ fun RootNavHost() {
         }
         composable(Routes.Switch) {
             SwitchScreen()
+        }
+        composable(Routes.Navigation){
+            NavigationScreen(navController)
+        }
+        composable(Routes.ScreenA){
+            ScreenA_WithoutData(navController)
+        }
+        composable(Routes.ScreenB + "/{data}"){
+            val data = it.arguments?.getString("data")
+            ScreenB_WithData(data?: "no name")
         }
     }
 }

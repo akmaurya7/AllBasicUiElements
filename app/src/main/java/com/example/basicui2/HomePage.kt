@@ -90,6 +90,11 @@ fun HomePageScreen(navController: NavController) {
             ButName = stringResource(id = R.string.CustomUi),
             route = Routes.CustomUi
         ),
+        ComposableCardData(
+            Desc = stringResource(id = R.string.NavigationDescription),
+            ButName = stringResource(id = R.string.Navigation),
+            route = Routes.Navigation
+        )
     )
 
     Scaffold(

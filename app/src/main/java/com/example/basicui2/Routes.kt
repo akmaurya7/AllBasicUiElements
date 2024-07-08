@@ -16,4 +16,7 @@ object Routes {
     val ProgressIndicator = "ProgressIndicatorScreen"
     val Slider = "SliderScreen"
     val Switch  = "SwitchScreen"
+    val Navigation = "NavigationScreen"
+    val ScreenA = "ScreenA"
+    val ScreenB = "ScreenB"
 }

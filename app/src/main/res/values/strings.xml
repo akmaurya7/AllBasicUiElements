@@ -42,4 +42,7 @@
 
     <string name="CustomUiDescription">By clicking the below button you get the custom ui of the login page for the jetpack compose </string>
     <string name="CustomUi">Custom ui</string>
+
+    <string name="NavigationDescription">You can navigate from one screen to another screen with or without data</string>
+    <string name="Navigation">Navigation</string>
 </resources>
